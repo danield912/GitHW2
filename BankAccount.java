@@ -9,11 +9,11 @@ public class BankAccount {
         // TODO: add the amount to the balance
     }
     public boolean withdraw(double amount) {
-        if (balance - amount >= 50) {
-            balance -= amount;
-            return true;
-        }
-        return false;
+        if (balance - (amount + 2) >= 50) {
+        balance -= (amount + 2);
+        return true;
+    }
+    return false;
     }
     public String getAccountSummary() {
         return accountHolder + ": $" + balance;
